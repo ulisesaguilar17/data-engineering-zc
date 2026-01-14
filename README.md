@@ -40,3 +40,23 @@ docker run -it --rm --entrypoint=bash python:3.9.16-slim
 # Dame un Ubuntu/Debian chiquito con Python 3.9.16 y ábreme una consola bash, y cuando termine destrúyelo
 ```
 
+## Volumes
+
+- mkdir test: crea un directorio llamado test en la carpeta actual.
+
+- cd test: entra al directorio test.
+
+- touch file1.txt file2.txt file3.txt: crea esos 3 archivos (vacíos) o actualiza su fecha de modificación si ya existían.
+
+- echo "Hello from host" > file1.txt: escribe Hello from host en file1.txt (sobrescribe el contenido si ya existía).
+
+- cd ..: regresa al directorio padre (sales de test).
+
+```bash
+mkdir test
+cd test
+touch file1.txt file2.txt file3.txt
+echo "Hello from host" > file1.txt
+cd ..
+```
+
