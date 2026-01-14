@@ -26,3 +26,17 @@ Check python Version:
 python3 -V
 ```
 
+## Different Base Images
+
+There are other base images besides `hello-world` and `ubuntu`. For example, Python:
+
+```bash
+docker run -it --rm python:3.9.16
+```
+
+
+```bash
+docker run -it --rm --entrypoint=bash python:3.9.16-slim
+# Dame un Ubuntu/Debian chiquito con Python 3.9.16 y ábreme una consola bash, y cuando termine destrúyelo
+```
+
