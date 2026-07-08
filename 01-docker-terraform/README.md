@@ -15,3 +15,9 @@ python -V
 docker
 ```
 
+###  Probar que **Docker** está bien instalado. 
+
+Descarga y ejecuta una imagen mínima de prueba que solo imprime un mensaje de bienvenida y se cierra.
+```bash
+docker run hello-world
+```
